@@ -1,0 +1,30 @@
+extends /blocks/layout-default/layout-default
+include /blocks/header/header
+include /blocks/logo/logo
+include /blocks/text/text
+include /blocks/product/product
+include /blocks/full-photo/full-photo
+
+block head
+	- var pageTitle = 'CSSSR Project Template';
+
+block content
+	+page.container
+
+		+logo.page__logo
+
+		+header.page__header
+
+		+text.page__text-container
+
+		.ui.container
+			.ui.cards.raised.link.page__products
+				+product.page__product
+				+product.page__product
+				+product.page__product
+				+product.page__product
+				+product.page__product
+				+product.page__product
+
+
+		+full-photo

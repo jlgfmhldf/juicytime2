@@ -1,0 +1,12 @@
+mixin full-photo()
+	+b.full-photo.ui.modal&attributes(attributes)
+		.header Декоративные часы № 68
+		.image.content
+			img(width='100%' height=600 src='https://placeimg.com/600/600/any?='+ Math.random(12))
+		.actions
+			.ui.positive.button
+				i.shop.icon
+				| Купить
+			.ui.basic.green.button
+				i.bookmark.icon
+				| Отложить

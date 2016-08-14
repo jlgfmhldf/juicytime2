@@ -1,0 +1,25 @@
+mixin product()
+	+b.product.ui.card.raised&attributes(attributes)
+		+e.image.image
+			+e('img').open-photo(src='https://placeimg.com/400/400/any?='+ Math.random(12))
+		+e.description.content
+			+e.title.header Охуенные часы
+			+e.meta.meta Сделанные из чистого золота и кошачьего умиления
+
+		+e.buttons.extra.content
+			.ui.two.buttons
+				.ui.positive.button
+					i.shop.icon
+					| Купить
+				.ui.basic.green.button
+					i.bookmark.icon
+					| Отложить
+
+		+e.bottom.extra.content
+			i.comment.icon.blue.outline
+			| 3 отзыва
+
+			span.right.floated
+				i.heart.like.icon.red.outline
+				| 17 лайков
+

@@ -1,0 +1,15 @@
+mixin header()
+	+b.header.ui.borderless.main.menu&attributes(attributes)
+		.ui.text.container
+			+e(a).item.item.bold.header.active(href=jv0) Главная
+			+e(a).item_dropdown.ui.dropdown.item.header(href='#')
+				| Часы
+				i.dropdown.icon
+				.menu
+					.item Фьюзинг
+					.item Гравировка
+					.item Фотопечать
+
+			+e(a).item.item.bold.header(href=jv0) Модульные картины
+
+			+e(a).item.item.header(href=jv0) Контакты
